@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wersja Poczatkowa</title>
+    <title>Core - Official Apple Product Reseller</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- MENU  -->
     <section class="menu">
-      <a href="" class="menuitem">Home</a>
-      <a href="" class="menuitem">About</a>
-      <a href="" class="menuitem">Location</a>
-      <a href="" class="menuitem">Product</a>
+      <div class="menu-logo">
+        <img class="logo" src="/images/logo.png" alt="logo" />
+      </div>
+      <div class="menu-links">
+        <a href="" class="menuitem">Home</a>
+        <a href="" class="menuitem">About</a>
+        <a href="" class="menuitem">Location</a>
+        <a href="" class="menuitem">Product</a>
+      </div>
+      <div class="menu-cart">
+        <img
+          src="\images\Снимок экрана 2024-12-07 155710.png"
+          alt="cart"
+          class="cart-image"
+        />
+      </div>
     </section>
+
+    <!-- Video Element -->
     <section class="productreveal">
       <video
         autoplay
@@ -28,6 +43,164 @@
         class=""
         autoplay="autoplay"
       ></video>
+
+      <h1 class="level1-title flex lvl1" class="animated-text lvl0">
+        Official Apple Product Reseller
+      </h1>
+    </section>
+
+    <section class="products-section" class="text-mask">
+      <h2 class="section-title lvl1">Featured Products</h2>
+      <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img
+            src="\images\desert_ip16promax.png"
+            alt="Product 1"
+            class="product-image iphone"
+            id="bigger"
+          />
+          <h3 class="product-name">iPhone 16 Pro</h3>
+          <p class="product-price">$999</p>
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img
+            src="\images\macbook pro.png"
+            alt="Product 2"
+            class="product-image mac"
+            id="bigger"
+          />
+          <h3 class="product-name">MacBook Pro</h3>
+          <p class="product-price">$2299</p>
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img
+            src="\images\apple watch ultra.png"
+            alt="Product 3"
+            class="product-image ultra"
+            id="watch"
+          />
+          <h3 class="product-name">Apple Watch Ultra</h3>
+          <p class="product-price">$599</p>
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="\images\airpodspro.png" class="product-image airpods" />
+
+          <h3 class="product-name">AirPods Pro</h3>
+          <p class="product-price">$189</p>
+          <button class="buy-button">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="level1-title flex lvl3" class="animated-text">
+      Want to Be Notified About Future Launches?
+    </h3>
+    <h1 class="level1-title flex lvl2" class="animated-text">
+      Subscribe to Our Newsletter
+    </h1>
+
+    <!-- <section class="products1"> -->
+    <!-- <img
+        style="
+          display: block;
+          -webkit-user-select: none;
+          margin: auto;
+          cursor: zoom-out;
+          background-color: hsl(0, 0%, 90%);
+          transition: background-color 300ms;
+        "
+        src="https://www.apple.com/v/iphone-16-pro/d/images/overview/product-viewer/iphone-pro/black_titanium__ezezv5esulua_xlarge.jpg"
+        width="1680"
+        height="740"
+      /> -->
+    <!-- </section> -->
+
+    <!-- Form Section -->
+    <!-- <section class="form-section">
+      <div id="form-selection-main-div">
+        <form
+          autocomplete="off"
+          id="registrationForm"
+          onsubmit="return registerUser();"
+          action="index.php"
+          method="post"
+        >
+          <label for="username">Full Name:</label>
+
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email:</label>
+
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section> -->
+
+    <section class="form-container">
+      <div class="form-wrapper">
+        <!-- Left Section -->
+        <div class="form-left">
+          <div class="left-header">
+            <span class="form-logo">CORE - Apple Products</span>
+          </div>
+          <div class="left-content">
+            <p class="caption-title">
+              
+            </p>
+            <div class="progress-indicators">
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="form-right">
+          <h2 class="lvl0"></h2>
+
+          <form class="account-form" autocomplete="off">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="First name"
+                class="form-input-half"
+              />
+              <input
+                type="text"
+                placeholder="Last name"
+                class="form-input-half"
+              />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="example@gmail.com" class="form-input" />
+            </div>
+            <div class="form-group">
+            </div>
+            <div class="form-group terms">
+              <input type="checkbox" id="agree" />
+              <label for="agree"
+                >I agree to the <a href="#">Terms & Conditions</a></label
+              >
+            </div>
+            <button type="submit" class="form-submit-button">Subscribe</button>
+          </form>
+          <p class="or-divider">Or register with</p>
+          <div class="social-buttons">
+            <button class="social-button google">Google</button>
+            <button class="social-button apple">Apple</button>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
